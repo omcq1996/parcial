@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio</title>
+</head>
+<body>
+<form>
+    <h4>Ejercicio</h4>
+
+    <label for="tiempo">Tiempo</label><br>
+    <input class="controls" type="number" [(ngModel)]="tiempo" name="tiempo" id="tiempo" placeholder="Ingrese el tiempo">
+    <br>
+    <br>
+    <label for="gravedad">Gravedad</label><br>
+    <input class="controls" type="number" [(ngModel)]="gravedad" name="gravedad" id="gravedad" placeholder="Ingrese la gravedad">
+    <br>
+    <br>
+    <label for="altura"> La altura es:</label><br>
+    <input class="controls" type="number" [readonly]="readonlyInput" [(ngModel)]="altura" name="altura" id="altura" >
+    <br>
+    <br>
+    <label for="velocidad">La velocidad es:</label><br>
+    <input class="controls" type="number" [readonly]="readonlyInput" [(ngModel)]="velocidad" name="velocidad" id="velocidad" >
+    <br>
+    <br>
+    <button (click)="calcularAltura()">Calcular altura</button>
+    <br>
+    <br>
+    <button (click)="calcularVelocidad()">Calcular velocidad</button>
+    <br>
+    <br>
+    <button type="reset">Restablecer</button>
+
+  </form>
+</body>
+</html>
